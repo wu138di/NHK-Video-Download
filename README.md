@@ -2,19 +2,20 @@
 
 [中文](README.md) · [English](README.en.md) · [日本語](README.ja.md)
 
-NHK视频下载工具 V2.0 ,终于上GitHub啦~
+NHK 视频下载工具 V2.0，终于上 GitHub 啦～
 
-B站视频链接：https://www.bilibili.com/video/BV1vV846VELH （不懂得其实还可以看这篇教程）
+[B 站视频教程](https://www.bilibili.com/video/BV1vV846VELH)（不熟悉的话，也可以先看看这篇教程）
 
 ## 下载
 
 到 [Releases](https://github.com/wu138di/NHK-Video-Download/releases/latest) 下载 Windows x64 安装包。装好后，可以从开始菜单打开下载器或命令行。
 
-这次发布的是 Windows 版本，未提供 Mac 版本，还在优化中（有需要内测请联系我）
+这次发布的是 Windows 版本。Mac 包还在优化中（正在内测，有需要请联系我）。
+
 ## 使用
 
-- 不熟悉这类工具使用的话，打开GUI工具，切到网页模式使用就可以了。
-- 已有媒体清单地址的话，可以用GUI一般模式或 CLI。
+- 不熟悉这类工具的话，打开 GUI，切到网页模式使用就可以了。
+- 已有媒体清单地址的话，可以用 GUI 的一般模式或 CLI。
 - 默认保存到 C 盘用户的“下载”文件夹，保存位置可在设置里调整。
 - 安装时选择中文、英文或日文，装好后界面和 CLI 跟随该语言，不再切换。
 - 下载后的字幕会自动清理控制标记，无需额外确认。原字幕会备份到输出目录里的 `.subtitle-originals`。
@@ -36,7 +37,7 @@ NHK-CLI-V2.0.exe download --help
 
 ## 源码和构建
 
-`src/` 里是 CLI、字幕处理、安装界面和 GUI 的集成代码。GUI 完整源码我就不放了，你们自己构建或者下载Releases里面构建好的安装包吧
+`src/` 里是 CLI、字幕处理、安装界面和 GUI 的集成代码。GUI 完整源码这次就不放了。大家可以基于已有的 V2.0 运行文件自行构建，也可以直接下载 [Releases](https://github.com/wu138di/NHK-Video-Download/releases/latest) 里构建好的安装包。
 
 构建需要 Windows、Python 3.14、Inno Setup 6，以及一份同版本的干净安装目录，作为 GUI 和运行库的基础文件。
 
@@ -53,11 +54,12 @@ powershell -File scripts/build.ps1 -BaseDirectory "C:\path\to\NHKDownloader"
 $env:PYTHONPATH="src"
 python -m unittest discover -s tests -v
 ```
+
 ## 联系我
 
-X：https://x.com/wudihao138hack
-QQ：3559380756
-bilibili：https://space.bilibili.com/514998292
+- X：[@wudihao138hack](https://x.com/wudihao138hack)
+- QQ：3559380756
+- bilibili：[wu138di](https://space.bilibili.com/514998292)
 
 ## 许可
 
