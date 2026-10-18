@@ -1250,5 +1250,9 @@
   "项目代码采用 MIT 许可，附加工具遵循各自许可证。": [
     "MIT licensed code. Additional tools keep their own licenses.",
     "コードは MIT ライセンス。追加ツールは各ライセンスに従います。"
+  ],
+  "按提示输入地址、请求头、密钥并选择轨道下载": [
+    "Enter a URL, headers and keys, then choose tracks to download",
+    "URL、ヘッダー、鍵を入力し、トラックを選んでダウンロード"
   ]
 }

@@ -20,7 +20,7 @@ $tools=Join-Path $stage 'tools'
 [IO.Directory]::CreateDirectory($tools)|Out-Null
 foreach($file in @('N_m3u8DL-RE.exe','packager-win-x64.exe')){Copy-Item -LiteralPath (Join-Path (Join-Path $base 'tools') $file) -Destination $tools}
 $modules=Join-Path $stage '_internal\nhk_v2'
-foreach($name in @('subtitle_cleaner.py','live_guard.py','launch.py','program_metadata.py','live_progress.py','preparation_errors.py','programme_binding.py','subtitle_integration.py','runtime_profile.py','app_i18n.py','gui_layout.py','gui_localization.py','browser_isolation.py','ui-locales.json')){
+foreach($name in @('subtitle_cleaner.py','live_guard.py','launch.py','general_diagnostics.py','program_metadata.py','live_progress.py','preparation_errors.py','programme_binding.py','subtitle_integration.py','runtime_profile.py','app_i18n.py','gui_layout.py','gui_localization.py','browser_isolation.py','ui-locales.json')){
  Copy-Item -LiteralPath (Join-Path (Join-Path $root 'src') $name) -Destination $modules -Force
 }
 $notices=Join-Path $stage '_internal\Additional Tools'

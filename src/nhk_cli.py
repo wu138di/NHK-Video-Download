@@ -168,6 +168,7 @@ def parser():
     p=argparse.ArgumentParser(description='NHK v2 配套命令行：共享新版设置、媒体清单下载、字幕清理。')
     p.add_argument('--version',action='version',version='NHK 下载器 命令行 V'+VERSION)
     sub=p.add_subparsers(dest='command',required=True)
+    sub.add_parser('wizard',help='按提示输入地址、请求头、密钥并选择轨道下载')
     sub.add_parser('gui',help='启动随包 GUI v2.0')
     sub.add_parser('config',help='显示共享设置路径、输出目录和 FFmpeg 路径')
     d=sub.add_parser('download',help='HLS/DASH 下载；支持 v2 payload 任务 JSON 和用户已有密钥')
@@ -194,8 +195,12 @@ def parser():
     return p
 
 def main(argv=None):
+    raw=list(sys.argv[1:] if argv is None else argv)
+    if not raw or raw==['wizard']:
+        from cli_wizard import run
+        return run(ROOT,installation(ROOT)['language'])
     p=parser()
-    args=p.parse_args(argv)
+    args=p.parse_args(raw)
     try:
         if args.command=='gui':
             exe=ROOT/'NHK-Downloader-V2.0.exe'

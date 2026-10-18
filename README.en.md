@@ -18,7 +18,7 @@ This release is for Windows. The Mac version is still being refined and is curre
 - If you already have a media playlist URL, use general mode or the CLI.
 - Downloads go to your C-drive user Downloads folder by default. You can choose another folder in Settings.
 - Choose Chinese, English or Japanese during installation. The app and CLI keep that language afterward.
-- Subtitle control tags are cleaned automatically after download. The original files are backed up in `.subtitle-originals` inside the output folder.
+- Subtitle control tags are cleaned automatically. The GUI keeps originals in `.subtitle-originals`. The CLI removes project files after a successful download; if it fails, it keeps the project and a redacted diagnostic log.
 - Live streams are stopped with a message asking you to wait for the replay.
 - Browser mode uses a separate profile in your local Edge / Chrome and does not load browser extensions. There is no bundled VPN, and the app does not change your system proxy.
 
@@ -26,7 +26,9 @@ The full instructions are here:
 
 [中文说明](guides/guide-zh.txt) · [English guide](guides/guide-en.txt) · [日本語の説明](guides/guide-ja.txt)
 
-CLI help:
+Just open the CLI and follow the prompts: playlist URL, request headers, then keys. Once the KID check passes, choose video quality, subtitles and audio tracks. No command-line arguments needed.
+
+The existing commands are still available for scripts:
 
 ```text
 NHK-CLI-V2.0.exe --help
