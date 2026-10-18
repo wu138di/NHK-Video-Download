@@ -20,7 +20,7 @@ This release is for Windows. A Mac installer is not included here. The installer
 - Live streams are stopped with a message asking you to wait for the replay.
 - Browser mode uses a separate profile in your local Edge / Chrome and does not load browser extensions. There is no bundled VPN, and the app does not change your system proxy.
 
-The author's original Chinese instructions are included unchanged, with English and Japanese translations:
+The original Chinese instructions are included unchanged, along with English and Japanese translations:
 
 [中文说明](guides/guide-zh.txt) · [English guide](guides/guide-en.txt) · [日本語の説明](guides/guide-ja.txt)
 
@@ -35,7 +35,7 @@ See [v2-task.example.json](v2-task.example.json) for a task file example. Keep c
 
 ## Source and builds
 
-`src/` contains the CLI, subtitle processing, installer UI and GUI integration code. The supplied directory contained the existing GUI distribution, not its complete readable source. Compiled GUI files are not presented here as source code.
+`src/` contains the CLI, subtitle processing, installer UI and GUI integration code. The full GUI source is not included yet; builds use the existing V2.0 GUI runtime.
 
 Building needs Windows, Python 3.14, Inno Setup 6 and a clean installation of the same V2.0 release for the GUI runtime files.
 

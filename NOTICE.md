@@ -8,4 +8,4 @@ Bundled runtimes, additional tools and supplied artwork are not relicensed by it
 - The Windows release retains the original runtime notices and package metadata under `_internal`.
 - The installer illustration was supplied for this project. Its inclusion is not a separate grant of rights to the illustration.
 
-The GUI runtime is carried forward from the existing V2.0 distribution. The original readable GUI source was not in the supplied directory, so it is not represented here as recovered source.
+The GUI runtime is carried forward from V2.0. Its full source is not included in this repository.
