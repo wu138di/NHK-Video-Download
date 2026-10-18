@@ -1,0 +1,1254 @@
+{
+  "NHK下载器": [
+    "NHK Downloader",
+    "NHK ダウンローダー"
+  ],
+  "NHK 下载器 V2.0": [
+    "NHK Downloader V2.0",
+    "NHK ダウンローダー V2.0"
+  ],
+  "流媒体解析与下载": [
+    "Media parsing and download",
+    "メディアの解析とダウンロード"
+  ],
+  "最小化": [
+    "Minimize",
+    "最小化"
+  ],
+  "最大化": [
+    "Maximize",
+    "最大化"
+  ],
+  "还原": [
+    "Restore",
+    "元に戻す"
+  ],
+  "关闭": [
+    "Close",
+    "閉じる"
+  ],
+  "高级选项": [
+    "Advanced options",
+    "詳細設定"
+  ],
+  "一般模式": [
+    "General mode",
+    "一般モード"
+  ],
+  "网页模式": [
+    "Browser mode",
+    "ブラウザモード"
+  ],
+  "网页自动识别": [
+    "Browser detection",
+    "ブラウザ自動検出"
+  ],
+  "媒体清单地址（M3U8 / MPD）": [
+    "Media manifest URL (M3U8 / MPD)",
+    "メディアプレイリストの URL（M3U8 / MPD）"
+  ],
+  "请输入 M3U8 或 MPD 地址（以 http:// 或 https:// 开头）": [
+    "Enter an M3U8 or MPD URL (starting with http:// or https://)",
+    "M3U8 または MPD の URL を入力（http:// または https://）"
+  ],
+  "示例：https://example.com/manifest.m3u8 或 video.mpd": [
+    "Example: https://example.com/manifest.m3u8 or video.mpd",
+    "例：https://example.com/manifest.m3u8 または video.mpd"
+  ],
+  "KEY（多个 KEY 请用逗号隔开，英文大写）": [
+    "KEY (comma-separated; uppercase hexadecimal)",
+    "KEY（複数の場合はカンマ区切り、大文字の 16 進数）"
+  ],
+  "请输入 KEY，如：0123456789ABCDEF0123456789ABCDEF": [
+    "Enter a KEY, e.g. 0123456789ABCDEF0123456789ABCDEF",
+    "KEY を入力（例：0123456789ABCDEF0123456789ABCDEF）"
+  ],
+  "示例：0123456789ABCDEF0123456789ABCDEF, 89ABCDEF0123456789ABCDEF": [
+    "Example: 0123456789ABCDEF0123456789ABCDEF, 89ABCDEF0123456789ABCDEF",
+    "例：0123456789ABCDEF0123456789ABCDEF, 89ABCDEF0123456789ABCDEF"
+  ],
+  "自定义视频名称（可选）": [
+    "Custom video name (optional)",
+    "動画のファイル名（任意）"
+  ],
+  "请输入视频名称，例如：NHK下载片": [
+    "Enter a video name, e.g. NHK video",
+    "動画の名前を入力（例：NHK の動画）"
+  ],
+  "不填写则使用解析到的名称": [
+    "Leave blank to use the detected name",
+    "空欄の場合は検出された名前を使用"
+  ],
+  "自动选择最佳流": [
+    "Automatically select the best stream",
+    "最適なストリームを自動選択"
+  ],
+  "使用解密器": [
+    "Use decryptor",
+    "復号ツールを使用"
+  ],
+  "保留字幕": [
+    "Keep subtitles",
+    "字幕を保存"
+  ],
+  "下载完成后自动转换媒体": [
+    "Automatically convert after download",
+    "ダウンロード後に自動変換"
+  ],
+  "查询解析": [
+    "Analyze",
+    "解析"
+  ],
+  "开始下载": [
+    "Start download",
+    "ダウンロード開始"
+  ],
+  "KID 校验": [
+    "KID check",
+    "KID の確認"
+  ],
+  "视频名称：": [
+    "Video name:",
+    "動画名："
+  ],
+  "解析名：": [
+    "Detected name:",
+    "検出された名前："
+  ],
+  "等待校验": [
+    "Waiting for check",
+    "確認待ち"
+  ],
+  "用于检测KID与流地址是否合规": [
+    "Checks the KID and stream URL",
+    "KID とストリーム URL を確認"
+  ],
+  "下载状态": [
+    "Download status",
+    "ダウンロード状況"
+  ],
+  "视频": [
+    "Video",
+    "映像"
+  ],
+  "音频": [
+    "Audio",
+    "音声"
+  ],
+  "字幕": [
+    "Subtitles",
+    "字幕"
+  ],
+  "默认视频": [
+    "Default video",
+    "既定の映像"
+  ],
+  "提示": [
+    "Notice",
+    "お知らせ"
+  ],
+  "错误": [
+    "Error",
+    "エラー"
+  ],
+  "请先填写 M3U8 或 MPD 地址。": [
+    "Enter an M3U8 or MPD URL first.",
+    "先に M3U8 または MPD の URL を入力してください。"
+  ],
+  "● 就绪": [
+    "● Ready",
+    "● 準備完了"
+  ],
+  "● 运行中…": [
+    "● Working…",
+    "● 処理中…"
+  ],
+  "● 出错了": [
+    "● Error",
+    "● エラー"
+  ],
+  "等待下载": [
+    "Waiting to download",
+    "ダウンロード待ち"
+  ],
+  "大小：--": [
+    "Size: --",
+    "サイズ：--"
+  ],
+  "速度：--": [
+    "Speed: --",
+    "速度：--"
+  ],
+  "速度：": [
+    "Speed: ",
+    "速度："
+  ],
+  "大小：": [
+    "Size: ",
+    "サイズ："
+  ],
+  "下载中": [
+    "Downloading",
+    "ダウンロード中"
+  ],
+  "失败": [
+    "Failed",
+    "失敗"
+  ],
+  "已跳过": [
+    "Skipped",
+    "スキップ済み"
+  ],
+  "完成": [
+    "Done",
+    "完了"
+  ],
+  "等待下载任务": [
+    "Waiting for a download",
+    "ダウンロード待ち"
+  ],
+  "等待": [
+    "Waiting",
+    "待機中"
+  ],
+  "收起": [
+    "Collapse",
+    "折りたたむ"
+  ],
+  "尚未选择视频流": [
+    "No video stream selected",
+    "映像ストリーム未選択"
+  ],
+  "分片 -- / --": [
+    "Segments -- / --",
+    "セグメント -- / --"
+  ],
+  "速度 --  ·  预计 --": [
+    "Speed --  ·  ETA --",
+    "速度 --  ·  残り --"
+  ],
+  "打开文件夹": [
+    "Open folder",
+    "フォルダーを開く"
+  ],
+  "正在准备": [
+    "Preparing",
+    "準備中"
+  ],
+  "媒体分片 ": [
+    "Media segments ",
+    "メディアセグメント "
+  ],
+  "速度 ": [
+    "Speed ",
+    "速度 "
+  ],
+  "  ·  预计 ": [
+    "  ·  ETA ",
+    "  ·  残り "
+  ],
+  "下载成功，正在解密转换中": [
+    "Downloaded; decrypting and converting",
+    "ダウンロード完了、復号・変換中"
+  ],
+  "分片已完成": [
+    "All segments complete",
+    "全セグメント完了"
+  ],
+  "自动转换中…请稍后": [
+    "Converting… Please wait",
+    "自動変換中…しばらくお待ちください"
+  ],
+  "转换中": [
+    "Converting",
+    "変換中"
+  ],
+  "下载成功": [
+    "Download complete",
+    "ダウンロード完了"
+  ],
+  "全部完成": [
+    "All done",
+    "すべて完了"
+  ],
+  "返回一般模式": [
+    "Back to general mode",
+    "一般モードに戻る"
+  ],
+  "后退": [
+    "Back",
+    "戻る"
+  ],
+  "前进": [
+    "Forward",
+    "進む"
+  ],
+  "刷新": [
+    "Reload",
+    "再読み込み"
+  ],
+  "输入视频页面网址，按回车访问并自动识别媒体": [
+    "Enter a video page URL and press Enter to detect media",
+    "動画ページの URL を入力し、Enter でメディアを検出"
+  ],
+  "输入视频页面网址，按回车打开": [
+    "Enter a video page URL and press Enter",
+    "動画ページの URL を入力し、Enter で開く"
+  ],
+  "输入视频页面网址，按回车在真实浏览器中打开": [
+    "Enter a video page URL and press Enter to open in the browser",
+    "動画ページの URL を入力し、Enter でブラウザに表示"
+  ],
+  "下载": [
+    "Download",
+    "ダウンロード"
+  ],
+  "查看下载状态": [
+    "View download status",
+    "ダウンロード状況を表示"
+  ],
+  "等待媒体": [
+    "Waiting for media",
+    "メディア待ち"
+  ],
+  "已识别视频": [
+    "Video detected",
+    "動画を検出"
+  ],
+  "日语": [
+    "Japanese",
+    "日本語"
+  ],
+  "英语": [
+    "English",
+    "英語"
+  ],
+  "中文": [
+    "Chinese",
+    "中国語"
+  ],
+  "韩语": [
+    "Korean",
+    "韓国語"
+  ],
+  "普通话": [
+    "Mandarin",
+    "標準中国語"
+  ],
+  "法语": [
+    "French",
+    "フランス語"
+  ],
+  "德语": [
+    "German",
+    "ドイツ語"
+  ],
+  "西班牙语": [
+    "Spanish",
+    "スペイン語"
+  ],
+  "意大利语": [
+    "Italian",
+    "イタリア語"
+  ],
+  "未知": [
+    "Unknown",
+    "不明"
+  ],
+  "（默认）": [
+    " (default)",
+    "（既定）"
+  ],
+  "无音频": [
+    "No audio",
+    "音声なし"
+  ],
+  "无字幕": [
+    "No subtitles",
+    "字幕なし"
+  ],
+  "准备中": [
+    "Preparing",
+    "準備中"
+  ],
+  "已完成": [
+    "Complete",
+    "完了"
+  ],
+  "准备失败": [
+    "Preparation failed",
+    "準備に失敗"
+  ],
+  "转换失败": [
+    "Conversion failed",
+    "変換に失敗"
+  ],
+  " · 排队 ": [
+    " · Queued ",
+    " · 待機中 "
+  ],
+  "正在下载媒体": [
+    "Downloading media",
+    "メディアをダウンロード中"
+  ],
+  "下载 ": [
+    "Download ",
+    "ダウンロード "
+  ],
+  "正在检测媒体": [
+    "Detecting media",
+    "メディアを検出中"
+  ],
+  "浏览器窗口": [
+    "Browser window",
+    "ブラウザウィンドウ"
+  ],
+  "正在后台读取媒体": [
+    "Reading media in the background",
+    "バックグラウンドでメディアを読み込み中"
+  ],
+  "暂未发现可用媒体": [
+    "No media available yet",
+    "利用可能なメディアがまだありません"
+  ],
+  "请完成 NHK 账号验证": [
+    "Complete NHK account verification",
+    "NHK アカウントの認証を完了してください"
+  ],
+  "媒体暂时不可用": [
+    "Media temporarily unavailable",
+    "メディアは一時的に利用できません"
+  ],
+  "正在整理轨道": [
+    "Preparing tracks",
+    "トラックを整理中"
+  ],
+  "暂未发现视频": [
+    "No video detected yet",
+    "動画がまだ検出されていません"
+  ],
+  "发现 ": [
+    "Detected ",
+    "検出："
+  ],
+  " 个视频流": [
+    " video streams",
+    " 件の映像ストリーム"
+  ],
+  "媒体暂时无法解析": [
+    "Media parsing is temporarily unavailable",
+    "メディアを現在解析できません"
+  ],
+  "正在下载": [
+    "Downloading",
+    "ダウンロード中"
+  ],
+  "选择要下载的流": [
+    "Select streams to download",
+    "ダウンロードするストリームを選択"
+  ],
+  "已捕获视频，请选择要下载的流": [
+    "Video detected. Select the streams to download",
+    "動画を検出しました。ダウンロードするストリームを選択してください"
+  ],
+  " · 识别到 ": [
+    " · Detected ",
+    " · 検出："
+  ],
+  " 个视频 · ": [
+    " video · ",
+    " 件の映像 · "
+  ],
+  " 个音频 · ": [
+    " audio · ",
+    " 件の音声 · "
+  ],
+  " 个字幕": [
+    " subtitles",
+    " 件の字幕"
+  ],
+  "1  选择视频清晰度": [
+    "1  Select video quality",
+    "1  映像の画質を選択"
+  ],
+  "请选择清晰度…": [
+    "Select video quality…",
+    "画質を選択…"
+  ],
+  "按 1080p / 720p 等清晰度排列，并显示实际码率与最高码率标记。": [
+    "Sorted by resolution, showing bitrate and the highest-bitrate marker.",
+    "1080p／720p などの画質順に表示し、ビットレートと最高値を示します。"
+  ],
+  "2  选择音频": [
+    "2  Select audio",
+    "2  音声を選択"
+  ],
+  "请先选择视频清晰度…": [
+    "Select video quality first…",
+    "先に映像の画質を選択…"
+  ],
+  "不下载音频": [
+    "Skip audio",
+    "音声をダウンロードしない"
+  ],
+  "3  选择字幕": [
+    "3  Select subtitles",
+    "3  字幕を選択"
+  ],
+  "请先选择音频…": [
+    "Select audio first…",
+    "先に音声を選択…"
+  ],
+  "不下载字幕": [
+    "Skip subtitles",
+    "字幕をダウンロードしない"
+  ],
+  "取消": [
+    "Cancel",
+    "キャンセル"
+  ],
+  "自动": [
+    "Auto",
+    "自動"
+  ],
+  "★ 最高码率": [
+    "★ Highest bitrate",
+    "★ 最高ビットレート"
+  ],
+  " 声道": [
+    " channels",
+    " チャンネル"
+  ],
+  "★默认": [
+    "★ Default",
+    "★ 既定"
+  ],
+  "  ★默认": [
+    "  ★ Default",
+    "  ★ 既定"
+  ],
+  "（强制）": [
+    " (forced)",
+    "（強制）"
+  ],
+  "请先选择视频清晰度。": [
+    "Select video quality first.",
+    "先に映像の画質を選択してください。"
+  ],
+  "历史记录": [
+    "History",
+    "履歴"
+  ],
+  "使用此 URL": [
+    "Use this URL",
+    "この URL を使用"
+  ],
+  "删除选中": [
+    "Delete selected",
+    "選択項目を削除"
+  ],
+  "清空全部": [
+    "Clear all",
+    "すべて消去"
+  ],
+  "设置": [
+    "Settings",
+    "設定"
+  ],
+  "外部依赖路径": [
+    "Component paths",
+    "コンポーネントのパス"
+  ],
+  "N_m3u8DL-RE 目录：": [
+    "N_m3u8DL-RE folder:",
+    "N_m3u8DL-RE のフォルダー："
+  ],
+  "FFmpeg 路径：": [
+    "FFmpeg path:",
+    "FFmpeg のパス："
+  ],
+  "输出目录：": [
+    "Output folder:",
+    "保存先フォルダー："
+  ],
+  "下载行为": [
+    "Download preferences",
+    "ダウンロード設定"
+  ],
+  "历史记录保留条数：": [
+    "History limit:",
+    "履歴の保存件数："
+  ],
+  "作者：": [
+    "Author:",
+    "作者："
+  ],
+  "版本：": [
+    "Version:",
+    "バージョン："
+  ],
+  "请勿用于商业用途，禁止二次分发！！！": [
+    "No commercial use or redistribution.",
+    "商用利用および再配布は禁止です。"
+  ],
+  "关于": [
+    "About",
+    "このアプリについて"
+  ],
+  "支持组件安装完成": [
+    "Support components installed",
+    "サポートコンポーネントのインストール完了"
+  ],
+  "支持组件下载失败，请检查网络后重试": [
+    "Component download failed. Check your connection and retry.",
+    "コンポーネントの取得に失敗しました。接続を確認して再試行してください。"
+  ],
+  "已有解析任务在进行中，请等待结束。": [
+    "An analysis task is already running. Please wait.",
+    "解析処理が進行中です。完了までお待ちください。"
+  ],
+  "使用所选轨道": [
+    "Use selected tracks",
+    "選択したトラックを使用"
+  ],
+  "已有下载任务在进行中。": [
+    "A download is already running.",
+    "ダウンロードがすでに進行中です。"
+  ],
+  "已加入下载队列，前方 ": [
+    "Queued; tasks ahead: ",
+    "待機リストに追加しました。先行タスク："
+  ],
+  " 个任务": [
+    " tasks",
+    " 件"
+  ],
+  "已加入下载队列：": [
+    "Added to download queue: ",
+    "ダウンロード待機リストに追加："
+  ],
+  "正在准备下载": [
+    "Preparing download",
+    "ダウンロードを準備中"
+  ],
+  "正在准备下载…": [
+    "Preparing download…",
+    "ダウンロードを準備中…"
+  ],
+  "无法准备下载": [
+    "Download preparation failed",
+    "ダウンロードの準備に失敗しました"
+  ],
+  "请重新打开视频页后再试": [
+    "Reopen the video page and try again",
+    "動画ページを開き直して再試行してください"
+  ],
+  "下载准备失败，请确认已登录后重新打开视频页。": [
+    "Download preparation failed. Sign in and reopen the video page.",
+    "ダウンロードの準備に失敗しました。ログインを確認し、動画ページを開き直してください。"
+  ],
+  "字幕 ": [
+    "Subtitles ",
+    "字幕 "
+  ],
+  "音频 ": [
+    "Audio ",
+    "音声 "
+  ],
+  "已选流：": [
+    "Selected streams: ",
+    "選択したストリーム："
+  ],
+  "（已提交给下载器）": [
+    " (sent to downloader)",
+    "（ダウンローダーに送信済み）"
+  ],
+  "✓ 下载返回成功 (rc=": [
+    "✓ Download succeeded (rc=",
+    "✓ ダウンロード成功 (rc="
+  ],
+  "⚠ 下载返回非 0 (rc=": [
+    "⚠ Download returned a nonzero code (rc=",
+    "⚠ ダウンロードの終了コードが 0 ではありません (rc="
+  ],
+  "未生成本次视频文件": [
+    "No video file was produced",
+    "今回の映像ファイルが生成されていません"
+  ],
+  "未生成本次音频文件": [
+    "No audio file was produced",
+    "今回の音声ファイルが生成されていません"
+  ],
+  "未找到字幕文件": [
+    "No subtitle file found",
+    "字幕ファイルが見つかりません"
+  ],
+  "✓ MP4 已生成：": [
+    "✓ MP4 created: ",
+    "✓ MP4 を生成："
+  ],
+  "✓ 源 MKV 已自动清理": [
+    "✓ Original MKV removed automatically",
+    "✓ 元の MKV を自動整理しました"
+  ],
+  "⚠ MP4 已生成，但源 MKV 未能自动清理": [
+    "⚠ MP4 created; original MKV retained",
+    "⚠ MP4 を生成しましたが、元の MKV は保持されています"
+  ],
+  "，源 MKV 已清理": [
+    "; original MKV removed",
+    "、元の MKV は整理済みです"
+  ],
+  "文件已保存到：": [
+    "Saved to: ",
+    "保存先："
+  ],
+  "⚠ MP4 转换失败": [
+    "⚠ MP4 conversion failed",
+    "⚠ MP4 の変換に失敗"
+  ],
+  "转换失败，源文件已保留": [
+    "Conversion failed; source file retained",
+    "変換に失敗しました。元のファイルは保持されています"
+  ],
+  "转换失败，源文件已保存在：": [
+    "Conversion failed; source retained at: ",
+    "変換に失敗しました。元のファイルの保存先："
+  ],
+  "] 下载任务正在处理…": [
+    "] Processing download…",
+    "] ダウンロードを処理中…"
+  ],
+  "已载入历史 URL": [
+    "History URL loaded",
+    "履歴の URL を読み込みました"
+  ],
+  "设置已保存": [
+    "Settings saved",
+    "設定を保存しました"
+  ],
+  "检测到直播流，请稍等回放后重试！": [
+    "Live stream detected. Retry after the replay is available.",
+    "ライブ配信を検出しました。見逃し配信の公開後に再試行してください。"
+  ],
+  "检测到直播流\n请稍等回放后重试！": [
+    "Live stream detected\nRetry after the replay is available.",
+    "ライブ配信を検出しました\n見逃し配信の公開後に再試行してください。"
+  ],
+  "直播流": [
+    "Live stream",
+    "ライブ配信"
+  ],
+  "安装已取消": [
+    "Installation cancelled",
+    "インストールを中止しました"
+  ],
+  "已下载 ": [
+    "Downloaded ",
+    "ダウンロード済み："
+  ],
+  "正在连接下载服务…": [
+    "Connecting to download service…",
+    "ダウンロードサービスに接続中…"
+  ],
+  "正在安装…": [
+    "Installing…",
+    "インストール中…"
+  ],
+  "下载组件安装包中缺少主程序": [
+    "Download component executable is missing",
+    "ダウンロードコンポーネントの実行ファイルがありません"
+  ],
+  "FFmpeg 尚未准备好，请重新运行启动脚本后重试": [
+    "FFmpeg is not ready. Run the launcher again.",
+    "FFmpeg の準備ができていません。起動スクリプトを再実行してください"
+  ],
+  "安装完成": [
+    "Installation complete",
+    "インストール完了"
+  ],
+  "下载组件已准备好": [
+    "Download component ready",
+    "ダウンロードコンポーネントの準備完了"
+  ],
+  "转换组件安装包中缺少主程序": [
+    "Converter executable is missing",
+    "変換コンポーネントの実行ファイルがありません"
+  ],
+  "转换组件安装失败": [
+    "Converter installation failed",
+    "変換コンポーネントのインストールに失敗"
+  ],
+  "所有支持组件均已准备好": [
+    "All support components ready",
+    "すべてのサポートコンポーネントの準備完了"
+  ],
+  "安装支持组件": [
+    "Install support components",
+    "サポートコンポーネントをインストール"
+  ],
+  "系统检测您未有任何的支持插件，是否下载": [
+    "Support components are missing. Download them?",
+    "サポートコンポーネントがありません。ダウンロードしますか？"
+  ],
+  "将依次安装下载、解密与视频转换组件": [
+    "Download, decryption and conversion components will be installed",
+    "ダウンロード、復号、映像変換の各コンポーネントをインストールします"
+  ],
+  "否": [
+    "No",
+    "いいえ"
+  ],
+  "是": [
+    "Yes",
+    "はい"
+  ],
+  "正在准备支持组件": [
+    "Preparing support components",
+    "サポートコンポーネントを準備中"
+  ],
+  "即将开始，请保持程序开启": [
+    "Starting shortly. Keep the application open.",
+    "まもなく開始します。アプリを開いたままにしてください"
+  ],
+  "现在可以开始下载了": [
+    "Downloads are ready to start",
+    "ダウンロードを開始できます"
+  ],
+  "支持组件下载失败": [
+    "Support component download failed",
+    "サポートコンポーネントの取得に失敗"
+  ],
+  "请检查网络后重试": [
+    "Check your connection and retry",
+    "接続を確認して再試行してください"
+  ],
+  "稍后": [
+    "Later",
+    "後で"
+  ],
+  "重试": [
+    "Retry",
+    "再試行"
+  ],
+  "保存配置失败：": [
+    "Failed to save settings: ",
+    "設定の保存に失敗："
+  ],
+  "找不到下载组件: ": [
+    "Download component not found: ",
+    "ダウンロードコンポーネントが見つかりません："
+  ],
+  "  正在探查 KID (probe=": [
+    "  Checking KID (probe=",
+    "  KID を確認中 (probe="
+  ],
+  "启动探查失败：": [
+    "Failed to start analysis: ",
+    "解析の起動に失敗："
+  ],
+  "读取输出失败：": [
+    "Failed to read output: ",
+    "出力の読み取りに失敗："
+  ],
+  "启动下载失败：": [
+    "Failed to start download: ",
+    "ダウンロードの起動に失敗："
+  ],
+  "  转换 ": [
+    "  Convert ",
+    "  変換 "
+  ],
+  "  ffmpeg 启动失败：": [
+    "  Failed to start FFmpeg: ",
+    "  FFmpeg の起動に失敗："
+  ],
+  "  音频无法直接封装，正在自动兼容转换…": [
+    "  Audio requires conversion; converting automatically…",
+    "  音声をそのまま格納できないため、自動変換中…"
+  ],
+  "  ffmpeg 兼容转换失败：": [
+    "  FFmpeg compatibility conversion failed: ",
+    "  FFmpeg の互換変換に失敗："
+  ],
+  "  ✓ MP4 转换完成": [
+    "  ✓ MP4 conversion complete",
+    "  ✓ MP4 の変換完了"
+  ],
+  "  ✗ MP4 转换失败\n": [
+    "  ✗ MP4 conversion failed\n",
+    "  ✗ MP4 の変換に失敗\n"
+  ],
+  "没有找到加密信息": [
+    "Encryption information not found",
+    "暗号化情報が見つかりません"
+  ],
+  "登录状态尚未准备好": [
+    "Sign-in is not ready",
+    "ログイン状態の準備ができていません"
+  ],
+  "wvg-next 组件缺失": [
+    "wvg-next component is missing",
+    "wvg-next コンポーネントがありません"
+  ],
+  "没有取得可用内容密钥": [
+    "No usable content key available",
+    "利用可能なコンテンツキーがありません"
+  ],
+  "真实浏览器连接组件未安装": [
+    "Browser connection component is not installed",
+    "ブラウザ接続コンポーネントがインストールされていません"
+  ],
+  "无法连接真实浏览器": [
+    "Browser connection failed",
+    "ブラウザに接続できません"
+  ],
+  "无法嵌入真实浏览器窗口": [
+    "Browser embedding failed",
+    "ブラウザウィンドウを埋め込めません"
+  ],
+  "真实浏览器连接中断，请重新进入网页模式": [
+    "Browser disconnected. Reopen browser mode.",
+    "ブラウザとの接続が切れました。ブラウザモードを開き直してください"
+  ],
+  "macOS 原生 WebKit 组件未安装": [
+    "macOS WebKit component is not installed",
+    "macOS の WebKit コンポーネントがインストールされていません"
+  ],
+  "无法创建应用内浏览器": [
+    "Could not create the embedded browser",
+    "アプリ内ブラウザを作成できません"
+  ],
+  "Windows WebView2 组件未安装": [
+    "Windows WebView2 component is not installed",
+    "Windows WebView2 コンポーネントがインストールされていません"
+  ],
+  "无法创建应用内 Edge 浏览器": [
+    "Could not create the embedded Edge browser",
+    "アプリ内 Edge ブラウザを作成できません"
+  ],
+  "Edge WebView2 初始化失败": [
+    "Edge WebView2 initialization failed",
+    "Edge WebView2 の初期化に失敗"
+  ],
+  "正在启动应用内浏览器": [
+    "Starting embedded browser",
+    "アプリ内ブラウザを起動中"
+  ],
+  "应用内浏览器已就绪": [
+    "Embedded browser ready",
+    "アプリ内ブラウザの準備完了"
+  ],
+  "应用内浏览器启动失败": [
+    "Embedded browser failed to start",
+    "アプリ内ブラウザの起動に失敗"
+  ],
+  "账号暂无播放权限": [
+    "This account does not currently have playback access",
+    "このアカウントには現在、再生権限がありません"
+  ],
+  "没有找到 Microsoft Edge 或 Google Chrome": [
+    "Microsoft Edge or Google Chrome was not found",
+    "Microsoft Edge または Google Chrome が見つかりません"
+  ],
+  "真实浏览器已连接": [
+    "Browser connected",
+    "ブラウザに接続しました"
+  ],
+  "完整浏览器已就绪": [
+    "Browser ready",
+    "ブラウザの準備完了"
+  ],
+  "浏览器嵌入失败": [
+    "Browser embedding failed",
+    "ブラウザの埋め込みに失敗"
+  ],
+  "真实浏览器连接失败": [
+    "Browser connection failed",
+    "ブラウザへの接続に失敗"
+  ],
+  "FFmpeg 缺失，请重新运行安装包。": [
+    "FFmpeg is missing. Run the installer again.",
+    "FFmpeg がありません。インストーラーを再実行してください。"
+  ],
+  "媒体清单嵌套层数过多。": [
+    "Too many nested media manifests.",
+    "メディアプレイリストの入れ子が深すぎます。"
+  ],
+  "密钥格式为 32 位十六进制 KEY 或 KID:KEY。": [
+    "Use a 32-digit hexadecimal KEY or KID:KEY.",
+    "32 桁の 16 進数 KEY または KID:KEY を指定してください。"
+  ],
+  "含密钥任务请选择默认 nm3u8 引擎。": [
+    "Use the default nm3u8 engine for tasks with a supplied key.",
+    "キーを指定する場合は既定の nm3u8 エンジンを使用してください。"
+  ],
+  "请指定清单地址或 --task 新版任务 JSON。": [
+    "Specify a manifest URL or a V2 task JSON with --task.",
+    "プレイリスト URL、または --task で V2 タスク JSON を指定してください。"
+  ],
+  "请求头含换行。": [
+    "A request header contains a newline.",
+    "リクエストヘッダーに改行が含まれています。"
+  ],
+  "目标已存在，使用 --force 确认覆盖。": [
+    "The destination exists. Use --force to overwrite.",
+    "保存先が存在します。上書きするには --force を指定してください。"
+  ],
+  "存在上次的 partial 文件，请检查后移走。": [
+    "A previous partial file exists. Check and move it first.",
+    "以前の partial ファイルが存在します。確認して移動してください。"
+  ],
+  "使用与 GUI v2 配套的 N_m3u8DL-RE 引擎": [
+    "Using the N_m3u8DL-RE engine bundled with GUI V2",
+    "GUI V2 付属の N_m3u8DL-RE エンジンを使用"
+  ],
+  "正在下载：": [
+    "Downloading: ",
+    "ダウンロード中："
+  ],
+  "下载结果为空。": [
+    "The downloaded file is empty.",
+    "ダウンロードしたファイルが空です。"
+  ],
+  "NHK v2 配套命令行：共享新版设置、媒体清单下载、字幕清理。": [
+    "NHK V2 command line: shared settings, manifest downloads and subtitle cleanup.",
+    "NHK V2 コマンドライン：共有設定、プレイリストのダウンロード、字幕整理。"
+  ],
+  "启动随包 GUI v2.0": [
+    "Launch the bundled GUI V2.0",
+    "付属の GUI V2.0 を起動"
+  ],
+  "显示共享设置路径、输出目录和 FFmpeg 路径": [
+    "Show the shared settings path, output folder and FFmpeg path",
+    "共有設定のパス、保存先、FFmpeg のパスを表示"
+  ],
+  "HLS/DASH 下载；支持 v2 payload 任务 JSON 和用户已有密钥": [
+    "Download HLS/DASH; supports V2 task JSON and user-supplied keys",
+    "HLS/DASH をダウンロード。V2 タスク JSON とユーザー指定キーに対応"
+  ],
+  "新版任务 JSON：{payload:{manifest_url:...},filename:...}": [
+    "V2 task JSON: {payload:{manifest_url:...},filename:...}",
+    "V2 タスク JSON：{payload:{manifest_url:...},filename:...}"
+  ],
+  "默认使用与 GUI 配套的分片下载引擎": [
+    "Use the GUI's bundled segment downloader by default",
+    "既定で GUI 付属の分割ダウンローダーを使用"
+  ],
+  "新版引擎视频选择器，如 res=1080:for=best": [
+    "Video selector, e.g. res=1080:for=best",
+    "映像の選択指定（例：res=1080:for=best）"
+  ],
+  "新版引擎音轨选择器，如 lang=ja:for=best": [
+    "Audio selector, e.g. lang=ja:for=best",
+    "音声の選択指定（例：lang=ja:for=best）"
+  ],
+  "新版引擎字幕选择器，如 lang=ja:for=all": [
+    "Subtitle selector, e.g. lang=ja:for=all",
+    "字幕の選択指定（例：lang=ja:for=all）"
+  ],
+  "自行提供的 KEY 或 KID:KEY，可重复指定": [
+    "User-supplied KEY or KID:KEY; repeatable",
+    "ユーザー指定の KEY または KID:KEY。複数指定可"
+  ],
+  "读取自行提供的密钥文本；不读取浏览器或自动获取密钥": [
+    "Read a user-supplied key file; no browser key retrieval",
+    "ユーザー指定のキーファイルを読む（ブラウザからのキー取得なし）"
+  ],
+  "录制时长，秒": [
+    "Duration in seconds",
+    "長さ（秒）"
+  ],
+  "完成后清理指定本地字幕": [
+    "Clean the specified local subtitles when finished",
+    "完了後に指定したローカル字幕を整理"
+  ],
+  "清理 SRT/ASS 控制标记；ASS 默认转 SRT": [
+    "Clean SRT/ASS control markers; ASS converts to SRT by default",
+    "SRT/ASS の制御マーカーを整理。ASS は既定で SRT に変換"
+  ],
+  "媒体清单超过 8 MiB。": [
+    "The media manifest exceeds 8 MiB.",
+    "メディアプレイリストが 8 MiB を超えています。"
+  ],
+  "输入不是 HLS/DASH 清单。": [
+    "The input is not an HLS/DASH manifest.",
+    "入力は HLS/DASH プレイリストではありません。"
+  ],
+  "--header 格式为 Name: Value。": [
+    "Use --header \"Name: Value\".",
+    "--header \"Name: Value\" の形式で指定してください。"
+  ],
+  "引擎结束，但未找到预期的视频输出。": [
+    "The engine exited without the expected video output.",
+    "エンジン終了後に、想定した映像出力が見つかりません。"
+  ],
+  "NHK 下载器 命令行 V": [
+    "NHK Downloader CLI V",
+    "NHK ダウンローダー CLI V"
+  ],
+  "该 DASH 清单声明内容保护，请使用自己已有的密钥通过 --key 指定。": [
+    "This DASH manifest declares content protection. Supply your existing key with --key.",
+    "この DASH プレイリストにはコンテンツ保護があります。手元のキーを --key で指定してください。"
+  ],
+  "错误：": [
+    "Error: ",
+    "エラー："
+  ],
+  "该清单含加密轨道，请使用自己已有的密钥通过 --key 指定。": [
+    "This manifest has encrypted tracks. Supply your existing key with --key.",
+    "このプレイリストには暗号化トラックがあります。手元のキーを --key で指定してください。"
+  ],
+  "时长须大于零。": [
+    "Duration must be greater than zero.",
+    "長さは 0 より大きい値にしてください。"
+  ],
+  "-o 只适用于单个输入。": [
+    "-o applies to a single input only.",
+    "-o は入力が 1 つの場合のみ指定できます。"
+  ],
+  "KID 解析中": [
+    "Analyzing KID",
+    "KID を解析中"
+  ],
+  "正在获取流信息": [
+    "Fetching stream information",
+    "ストリーム情報を取得中"
+  ],
+  "正在解析流信息": [
+    "Parsing stream information",
+    "ストリーム情報を解析中"
+  ],
+  "等待解析结果": [
+    "Waiting for results",
+    "解析結果を待機中"
+  ],
+  "正在校验…": [
+    "Checking…",
+    "確認中…"
+  ],
+  "校验通过": [
+    "Check passed",
+    "確認成功"
+  ],
+  "校验失败": [
+    "Check failed",
+    "確認失敗"
+  ],
+  "  ·  大小：": [
+    "  ·  Size: ",
+    "  ·  サイズ："
+  ],
+  "已识别影片": [
+    "Video identified",
+    "動画を識別しました"
+  ],
+  "时长：": [
+    "Duration: ",
+    "長さ："
+  ],
+  "（估算）": [
+    " (estimated)",
+    "（推定）"
+  ],
+  "读取节目资料已超时或取消": [
+    "Programme information request timed out or was cancelled",
+    "番組情報の取得がタイムアウトしたか、中止されました"
+  ],
+  "节目名：": [
+    "Programme: ",
+    "番組名："
+  ],
+  "正在下载影片：": [
+    "Downloading video: ",
+    "動画をダウンロード中："
+  ],
+  "分片 ": [
+    "Segments ",
+    "セグメント "
+  ],
+  "  ·  当前阶段预计 ": [
+    "  ·  Stage ETA ",
+    "  ·  現在の処理の残り "
+  ],
+  "媒体": [
+    "Media",
+    "メディア"
+  ],
+  "正在等待当前节目的资料": [
+    "Waiting for the current programme information",
+    "現在の番組情報を待機中"
+  ],
+  "已忽略其他节目的媒体，播放当前节目后会重新识别": [
+    "Other programme media ignored. Play the current programme to detect it again.",
+    "別の番組のメディアを無視しました。現在の番組を再生すると再検出します。"
+  ],
+  "页面已切换，请重新识别当前节目": [
+    "The page changed. Detect the current programme again.",
+    "ページが切り替わりました。現在の番組を再検出してください。"
+  ],
+  "[请求地址]": [
+    "[request URL]",
+    "[リクエスト URL]"
+  ],
+  "\\1[已隐藏]": [
+    "\\1[hidden]",
+    "\\1[非表示]"
+  ],
+  "未取得节目播放资料，请在网页内播放节目后重试": [
+    "Programme playback information is missing. Play it in the browser and retry.",
+    "番組の再生情報がありません。ブラウザ内で番組を再生して再試行してください。"
+  ],
+  "尚未取得登录状态，请在网页内登录并播放节目后重试": [
+    "Sign-in information is missing. Sign in and play the programme in the browser.",
+    "ログイン情報がありません。ブラウザ内でログインし、番組を再生してください。"
+  ],
+  "未知错误": [
+    "Unknown error",
+    "不明なエラー"
+  ],
+  "），请在网页内确认登录和播放权限": [
+    "); check sign-in and playback access in the browser",
+    "）。ブラウザ内でログインと再生権限を確認してください"
+  ],
+  "节目授权请求被拒绝（": [
+    "Programme access request was rejected (",
+    "番組のアクセス要求が拒否されました（"
+  ],
+  "下载准备失败：": [
+    "Download preparation failed: ",
+    "ダウンロードの準備に失敗："
+  ],
+  "节目媒体地址缺失，请重新识别当前节目": [
+    "Programme media URL is missing. Detect the programme again.",
+    "番組のメディア URL がありません。番組を再検出してください。"
+  ],
+  "正在补全节目播放资料": [
+    "Completing programme playback information",
+    "番組の再生情報を補完中"
+  ],
+  "节目资料读取中，请稍后关闭": [
+    "Reading programme information. Close after it finishes.",
+    "番組情報を読み込み中です。完了後に閉じてください。"
+  ],
+  "读取节目播放资料超时，请重新播放当前节目后重试": [
+    "Playback information timed out. Play the programme again and retry.",
+    "再生情報の取得がタイムアウトしました。番組を再生し直して再試行してください。"
+  ],
+  "准备流程异常：": [
+    "Preparation error: ",
+    "準備処理のエラー："
+  ],
+  "读取节目播放资料失败：": [
+    "Failed to read playback information: ",
+    "再生情報の読み込みに失敗："
+  ],
+  "\\s*·\\s*排队\\s*\\d+$": [
+    "\\s*·\\s*Queued\\s*\\d+$",
+    "\\s*·\\s*待機中\\s*\\d+$"
+  ],
+  "项目代码采用 MIT 许可，附加工具遵循各自许可证。": [
+    "MIT licensed code. Additional tools keep their own licenses.",
+    "コードは MIT ライセンス。追加ツールは各ライセンスに従います。"
+  ]
+}

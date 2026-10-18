@@ -1,0 +1,35 @@
+Additional Tools
+
+安装说明按中文、英文和日文分别提供，并随安装器语言切换。
+安装包保留原 LOGO，底板采用用户提供的樱花图片。
+
+字幕清理为内置流程：成功保存本次任务的外部字幕后自动完成。
+无确认弹窗、无清理按钮、无独立清理程序。
+成品字幕原文件名、正文与时间轴保留，ASS 保留排版。
+原始字节备份至输出目录的 .subtitle-originals 文件夹。
+仅处理本次任务同名前缀、修改时间符合的 SRT/ASS/SSA 字幕。
+CLI 下载得到的字幕同样自动清理，不扫描其他无关字幕。
+文本清理不包含 OCR、语音识别或 ARIB 二进制字幕解码。
+
+sim 开头的主机、simul/sim 前缀的媒体路径在媒体清单、KID 校验、
+下载请求之前识别直播，KID 面板显示直播与等待回放提示。
+用户提供的连续 HTTP-TS 示例地址同样作为直播处理。
+普通回放 URL 继续原流程，不自动切换到第三方直播源。
+
+开始菜单 → NHK 命令行；详细参数输入：
+NHK-CLI-V2.0.exe --help
+NHK-CLI-V2.0.exe download --help
+
+任务 JSON 字段兼容 payload.manifest_url、_request_headers、filename。
+使用独立 %APPDATA%\NHKDownloader\V2 配置，默认使用随包 N_m3u8DL-RE。
+自行提供密钥使用 --key KID:KEY（可重复）或 --key-file 文件路径。
+CLI 不包含网页登录或自动取密钥流程，GUI 原流程保留。
+现有文件默认保护，明确使用 --force 才覆盖输出。
+clean-subtitles 命令可批处理已有本地字幕并另存 .clean.srt；
+这不是 GUI 操作步骤，下载后的自动流程直接清理下载成品并备份。
+
+内含原 Python/Qt 运行库、N_m3u8DL-RE 0.6.0-beta、Shaka Packager 3.9.3
+和原包 FFmpeg 7.1；系统浏览器/WebView2 使用电脑已有环境。
+不打包个人登录状态、历史、密钥文件或下载视频。
+原桌面程序保留。卸载不移除个人配置、登录资料及下载文件。
+第三方来源和许可证见同目录 Notices.txt。

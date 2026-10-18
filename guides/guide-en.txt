@@ -1,0 +1,19 @@
+﻿Welcome to NHK Video Download 2.0, developed by wu138di. Below are the instructions and important notes:
+
+----------------------------------------------------------------------------------------------------------
+
+1: This tool comes in GUI and CIL versions and was developed using Weber and Rust. If you're a complete beginner, please use the GUI version and switch to browser mode to automatically fetch and download! If you're comfortable with the technical side, the home page and CLI are for you~
+
+2: This tool includes MMT-to-HLS conversion, so there's no need to worry about getting audio with no video.
+
+3: This tool comes in Windows and Mac versions. As for iOS and Android/HarmonyOS versions, I just don't have the time to develop them (too busy!).
+
+4: The subtitles downloaded by this tool use a special conversion method, so you can import them directly into ASigb~
+
+5: This tool is for learning and discussion only. Do not use it for illegal purposes; otherwise, I accept no legal liability!
+
+Hope everyone gets to download the tools they like~
+
+---by wu138di
+
+---------------------------------------------------------------------------------------------------------

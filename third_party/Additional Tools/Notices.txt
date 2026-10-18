@@ -1,0 +1,35 @@
+Additional Tools
+
+The original user-supplied GUI and its resources are preserved. This bundle does
+not imply affiliation with NHK or the original application author.
+
+Installer: Inno Setup 6.7.3, https://jrsoftware.org/isdl.php
+Source: https://github.com/jrsoftware/issrc
+Chinese translation: https://github.com/kira-96/Inno-Setup-Chinese-Simplified-Translation
+
+N_m3u8DL-RE 0.6.0-beta, original release binary, https://github.com/nilaoda/N_m3u8DL-RE
+Release: https://github.com/nilaoda/N_m3u8DL-RE/releases/tag/v0.6.0-beta
+License: MIT; full text in License-01.txt
+
+Shaka Packager 3.9.3, original release binary, https://github.com/shaka-project/shaka-packager
+Release: https://github.com/shaka-project/shaka-packager/releases/tag/v3.9.3
+License: Apache-2.0; full text in License-02.txt
+
+FFmpeg 7.1 (ffmpeg-win-x86_64-v7.1.exe), from original application's imageio_ffmpeg.
+Project/source: https://ffmpeg.org/ and https://github.com/imageio/imageio-ffmpeg
+Build includes GPL components; full license text in License-03.txt.
+Corresponding build provenance is in imageio-ffmpeg and its FFmpeg build scripts.
+Source/build information: https://github.com/imageio/imageio-ffmpeg/tree/main/ffmpeg
+
+PySide6 / Qt: original user-supplied runtime, https://www.qt.io/licensing/
+Qt for Python: https://doc.qt.io/qtforpython-6/licenses.html
+Python: https://www.python.org/psf/license/
+PyInstaller bootloader exception: https://pyinstaller.org/en/stable/license.html
+Tcl/Tk: https://www.tcl.tk/software/tcltk/license.html
+
+Only the subtitle text cleaner and companion CLI are newly implemented here.
+No screenshot-author conversion utility was downloaded or executed.
+Original bundled dependency notices and dist-info metadata remain in _internal.
+
+Project additions: MIT license; see Project-LICENSE.txt.
+Third-party components and supplied artwork retain their own rights.

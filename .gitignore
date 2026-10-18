@@ -1,0 +1,19 @@
+__pycache__/
+*.py[cod]
+.venv/
+stage/
+bootstrap/
+build/
+dist/
+*.log
+.env
+.env.*
+*.key
+*.pem
+*Cookies*
+*Login Data*
+**/browser/
+**/.subtitle-originals/
+config.json
+history.json
+install-settings.json

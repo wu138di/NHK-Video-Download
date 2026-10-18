@@ -1,0 +1,9 @@
+{
+  "payload": {
+    "manifest_url": "https://example.org/video.m3u8",
+    "manifest_kind": "hls",
+    "title": "节目名称",
+    "_request_headers": {"User-Agent": "NHK-Downloader-v2"}
+  },
+  "filename": "节目名称"
+}
