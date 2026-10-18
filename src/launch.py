@@ -8,11 +8,12 @@ from preparation_errors import install as install_preparation_errors
 from programme_binding import install as install_programme_binding
 from subtitle_integration import install as install_subtitles
 from live_guard import install as install_live_guard
-from app_i18n import localize_code, localize_extension, translate
+from app_i18n import localize_code, localize_extension, translate, LANGUAGE
 from runtime_profile import install_config
 from gui_layout import install as install_layout
 from gui_localization import finish_install
 from browser_isolation import install as install_browser_isolation
+from general_diagnostics import install as install_general_diagnostics
 
 
 @lru_cache(maxsize=1)
@@ -33,6 +34,7 @@ def load_app():
     install_programme_binding(namespace)
     install_subtitles(namespace)
     install_live_guard(namespace)
+    install_general_diagnostics(namespace, LANGUAGE)
     install_layout(namespace, translate)
     finish_install(namespace)
     return namespace
