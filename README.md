@@ -51,6 +51,10 @@ powershell -File scripts/build.ps1 -BaseDirectory "C:\path\to\NHKDownloader"
 $env:PYTHONPATH="src"
 python -m unittest discover -s tests -v
 ```
+## 联系我
+
+X：https://x.com/wudihao138hack
+QQ：3559380756
 
 ## 许可
 
