@@ -2,7 +2,9 @@
 
 [中文](README.md) · [English](README.en.md) · [日本語](README.ja.md)
 
-NHK 视频下载工具，图形界面和命令行放在同一个安装包里。
+NHK视频下载工具 V2.0 ,终于上GitHub啦~
+
+B站视频链接：https://www.bilibili.com/video/BV1vV846VELH（不懂得其实还可以看这篇教程）
 
 ## 下载
 
@@ -55,6 +57,7 @@ python -m unittest discover -s tests -v
 
 X：https://x.com/wudihao138hack
 QQ：3559380756
+bilibili：https://space.bilibili.com/514998292
 
 ## 许可
 
