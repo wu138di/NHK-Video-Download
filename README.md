@@ -4,7 +4,7 @@
 
 NHK视频下载工具 V2.0 ,终于上GitHub啦~
 
-B站视频链接：https://www.bilibili.com/video/BV1vV846VELH（不懂得其实还可以看这篇教程）
+B站视频链接：https://www.bilibili.com/video/BV1vV846VELH （不懂得其实还可以看这篇教程）
 
 ## 下载
 
