@@ -37,7 +37,9 @@ def install(ns):
         self._set_state('idle')
     for name in ('_on_probe_clicked','_on_download_clicked'):
         original=getattr(ns['GeneralTab'],name)
-        def clicked(self,_original=original):
+        def clicked(self,checked=False,*,_original=original):
+            # Qt clicked(bool) supplies a positional checked state. Keep the
+            # captured callback keyword-only so the signal cannot replace it.
             if is_live_source(self.url_edit.text().strip()):
                 show_live(self.main)
                 return
