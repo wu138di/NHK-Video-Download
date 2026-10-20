@@ -70,3 +70,9 @@ python -m unittest discover -s tests -v
 还有，这不是 NHK 官方项目。仅供学习交流使用！请勿用于非法用途哦，出了事情，本人不负任何法律责任！
 
 Made by wu138di
+
+##为爱发电
+
+制作实属不易，如果你想为爱发电，可以扫下面的码支持我~谢谢啦
+<img width="1382" height="1382" alt="mm_reward_qrcode_1792512034770" src="https://github.com/user-attachments/assets/b684be82-806f-4a94-9248-ec0028d21167" />
+
