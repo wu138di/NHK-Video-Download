@@ -71,7 +71,7 @@ python -m unittest discover -s tests -v
 
 Made by wu138di
 
-##为爱发电
+## 为爱发电
 
 制作实属不易，如果你想为爱发电，可以扫下面的码支持我~谢谢啦
 <img width="1382" height="1382" alt="mm_reward_qrcode_1792512034770" src="https://github.com/user-attachments/assets/b684be82-806f-4a94-9248-ec0028d21167" />
