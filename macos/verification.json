@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-30",
+  "source_version": "1.0",
+  "source_sha256": "0a5f6421c28c8afd4a3b2a7fc67a3a5f0962fd1b30839306b9e98fa63ddd45c9",
+  "source_bytes": 19205,
+  "source_preserved_byte_exact": true,
+  "platform": "macOS",
+  "architecture": "arm64",
+  "python": "3.9.6",
+  "checks": {
+    "syntax": "PASS",
+    "import_without_starting_main": "PASS",
+    "filename_helper": "PASS",
+    "output_decoding": "PASS",
+    "kid_matching": "PASS",
+    "missing_kid_detection": "PASS"
+  },
+  "media_download_tested": false,
+  "macos_installer_built": false
+}

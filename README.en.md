@@ -12,6 +12,8 @@ Get the Windows x64 installer from [Releases](https://github.com/wu138di/NHK-Vid
 
 This release is for Windows. The Mac version is still being refined and is currently in private testing. Get in touch if you would like to try it.
 
+The existing [V1.0 macOS command-line source](macos/README.md#english) is now available, unchanged. It is separate from Windows V2.0 and is not a Mac installer.
+
 ## Using the app
 
 - If you are not familiar with download options, use browser mode in the GUI.

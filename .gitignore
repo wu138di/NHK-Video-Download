@@ -17,3 +17,6 @@ dist/
 config.json
 history.json
 install-settings.json
+.DS_Store
+macos/.nhk-tools/
+macos/output/

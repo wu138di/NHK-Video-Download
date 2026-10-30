@@ -6,3 +6,5 @@
 *.png binary
 *.ico binary
 guides/*.txt -text
+# Keep the original Mac V1.0 source byte-for-byte.
+macos/NHK-Console-V1.0-macOS-Source.py -text
