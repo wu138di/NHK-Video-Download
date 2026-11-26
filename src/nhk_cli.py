@@ -12,6 +12,7 @@ import urllib.parse
 import xml.etree.ElementTree as ET
 from subtitle_cleaner import convert,auto_clean
 from live_guard import contains_live,LIVE_MESSAGE
+from media_request import normalize_url,request_headers as provider_headers
 
 VERSION='2.0'
 ROOT=Path(sys.executable).parent if getattr(sys,'frozen',False) else Path(__file__).resolve().parents[1]/'stage'
@@ -97,7 +98,7 @@ def download(args):
     if any(not re.fullmatch(r'(?:[0-9A-Fa-f]{32}:)?[0-9A-Fa-f]{32}',k) for k in keys):
         raise ValueError('密钥格式为 32 位十六进制 KEY 或 KID:KEY。')
     if keys and args.engine!='nm3u8':raise ValueError('含密钥任务请选择默认 nm3u8 引擎。')
-    url=args.url or data.get('manifest_url') or data.get('url')
+    url=normalize_url(args.url or data.get('manifest_url') or data.get('url'))
     if not url:
         raise ValueError('请指定清单地址或 --task 新版任务 JSON。')
     if contains_live(url):raise ValueError(LIVE_MESSAGE)
@@ -108,6 +109,7 @@ def download(args):
         headers[k.strip()]=v.strip()
     if any('\r' in k+v or '\n' in k+v for k,v in headers.items()):
         raise ValueError('请求头含换行。')
+    headers=provider_headers(url,headers)
     check_manifest(url,headers,allow_encrypted=bool(keys))
     folder=Path(args.output_dir or cfg.get('output_dir') or downloads_directory())
     folder.mkdir(parents=True,exist_ok=True)
@@ -143,7 +145,7 @@ def download(args):
         subtitles=list(args.subtitle)
         subtitles += [str(p) for p in folder.glob(name+'*') if p.suffix.lower() in ('.srt','.ass') and '.clean.' not in p.name]
         for sub in dict.fromkeys(subtitles):
-            print(json.dumps(auto_clean(sub),ensure_ascii=False))
+            print(json.dumps(auto_clean(sub,plain=True,export_text=True),ensure_ascii=False))
         return 0
     cmd=[ffmpeg_path(cfg),'-hide_banner','-nostdin','-n']
     if headers and urllib.parse.urlparse(url).scheme in ('http','https'):
@@ -161,7 +163,7 @@ def download(args):
     partial.replace(output)
     print(json.dumps(dict(output=str(output.resolve()),bytes=output.stat().st_size),ensure_ascii=False))
     for sub in args.subtitle:
-        print(json.dumps(auto_clean(sub),ensure_ascii=False))
+        print(json.dumps(auto_clean(sub,plain=True,export_text=True),ensure_ascii=False))
     return 0
 
 def parser():

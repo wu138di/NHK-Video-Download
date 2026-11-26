@@ -1254,5 +1254,41 @@
   "按提示输入地址、请求头、密钥并选择轨道下载": [
     "Enter a URL, headers and keys, then choose tracks to download",
     "URL、ヘッダー、鍵を入力し、トラックを選んでダウンロード"
+  ],
+  "请提供此节目的 KID:KEY（各 32 位十六进制）": [
+    "Provide this programme's KID:KEY (32 hex characters each)",
+    "この番組の KID:KEY（各32桁の16進数）を入力してください"
+  ],
+  "正在读取 ODA 播放资料": [
+    "Reading ODA media information",
+    "ODA の再生情報を取得中"
+  ],
+  "请输入此节目的 KID:KEY（多个用逗号分隔，仅本次使用）：": [
+    "Enter this programme's KID:KEY (comma-separated, for this run only):",
+    "この番組の KID:KEY を入力（複数はカンマ区切り・今回のみ使用）："
+  ],
+  "已取消输入 ODA 密钥": [
+    "ODA key entry cancelled",
+    "ODA の鍵入力をキャンセルしました"
+  ],
+  "ODA KID 与提供的密钥不匹配，请确认是同一节目": [
+    "ODA KID does not match the supplied key. Check the programme.",
+    "ODA の KID と入力した鍵が一致しません。番組を確認してください。"
+  ],
+  "ODA：用户提供的 KID 已匹配，开始下载所选轨道": [
+    "ODA: supplied KIDs matched; downloading the selected tracks",
+    "ODA：入力した KID の照合に成功しました。選択したトラックを取得します"
+  ],
+  "正在整理字幕正文（包含内嵌字幕）": [
+    "Cleaning subtitle text, including embedded tracks",
+    "内蔵字幕を含む字幕テキストを整理中"
+  ],
+  "字幕正文整理完成：": [
+    "Subtitle text cleaned: ",
+    "字幕テキストの整理が完了："
+  ],
+  " 路，SRT / TXT 和内嵌字幕均已更新": [
+    " tracks; SRT, TXT and embedded subtitles updated",
+    "トラック。SRT・TXT・内蔵字幕を更新しました"
   ]
 }

@@ -1,6 +1,7 @@
 """Independent text-level ARIB marker cleaner; no external conversion utilities."""
 import re
 import hashlib
+import html
 from pathlib import Path
 
 ARIB = re.compile(r'\[(?:CS|SWF|SDF|SDP|SHS|SVS|SSM|APS|ACPS|NSZ|MSZ|SSZ|SZX|WHF|WMM|WFT|WCT|WOT|COL|CDC|POL|FLC|HLC|RPC|TIME|STL|SPL|APR|APB|APF|APD|APU|PAPF|BEL|CAN|ESC|LS0|LS1|LS2|LS3|SS2|SS3)(?:_[0-9A-Fa-f_,; .+-]+)?\]', re.I)
@@ -20,8 +21,12 @@ def read_text(path):
 
 def clean_text(text, ass=False):
     text, count = ARIB.subn('', text)
+    text = re.sub(r'\x1b\[[0-?]*[ -/]*[@-~]', '', text)
     if ass:
         text = OVERRIDE.sub('', text).replace(r'\N', '\n').replace(r'\n', '\n').replace(r'\h', ' ')
+        text = re.sub(r'(?i)<br\s*/?>', '\n', text)
+        text = re.sub(r'(?is)</?(?:font|span|b|i|u|s|ruby|rt)(?:\s[^<>]*?)?\s*/?>', '', text)
+        text = html.unescape(text)
     text = ''.join(c for c in text if c in '\n\t' or (ord(c) >= 32 and not 127 <= ord(c) <= 159))
     return '\n'.join(line.rstrip() for line in text.splitlines()).strip(), count
 
@@ -145,13 +150,32 @@ def convert(source, output=None, output_format=None, force=False):
         stream.write(result)
     return dict(input=str(source),output=str(output),**stats)
 
-def auto_clean(source):
+def subtitle_text(srt):
+    paragraphs = []
+    for block in re.split(r'\n\s*\n', srt.replace('\r\n', '\n').strip()):
+        lines = block.splitlines()
+        timeline = next((i for i, line in enumerate(lines) if '-->' in line), None)
+        if timeline is not None:
+            text, _ = clean_text('\n'.join(lines[timeline + 1:]), ass=True)
+            if text:
+                paragraphs.append(text)
+    return '\n\n'.join(paragraphs) + ('\n' if paragraphs else '')
+
+
+def auto_clean(source, plain=False, export_text=False):
     """Clean a completed-download sidecar in place, keeping a raw backup."""
     source=Path(source).resolve()
     original=source.read_bytes()
     text=read_text(source)
+    output=source
     if source.suffix.lower()=='.srt':result,stats=clean_srt(text)
-    elif source.suffix.lower() in ('.ass','.ssa'):result,stats=clean_ass(text)
+    elif source.suffix.lower() in ('.ass','.ssa'):
+        result,stats=ass_to_srt(text) if plain else clean_ass(text)
+        if plain:
+            output=source.with_suffix('.srt')
+            if output.exists() and output.read_bytes()!=result.encode('utf-8-sig'):
+                output=source.with_name(source.stem+'.plain.srt')
+                if output.exists():raise FileExistsError('Plain subtitle output already exists')
     else:raise ValueError('字幕类型未识别。')
     if not stats['cues']:raise ValueError('未找到字幕条目。')
     backup_dir=source.parent/'.subtitle-originals'
@@ -160,7 +184,24 @@ def auto_clean(source):
     backup_dir.mkdir(exist_ok=True)
     if not backup.exists():
         with backup.open('xb') as stream:stream.write(original)
-    temporary=source.with_name(source.name+'.nhk-cleaning.tmp')
+    temporary=output.with_name(output.name+'.nhk-cleaning.tmp')
     with temporary.open('w',encoding='utf-8-sig',newline='\r\n') as stream:stream.write(result)
-    temporary.replace(source)
-    return dict(input=str(source),output=str(source),backup=str(backup),**stats)
+    temporary.replace(output)
+    text_output=None
+    if export_text:
+        srt=result if output.suffix.lower()=='.srt' else ass_to_srt(result)[0]
+        text_output=output.with_suffix('.txt')
+        if text_output.exists():
+            previous=text_output.read_bytes()
+            saved=backup_dir/(text_output.name+'.'+hashlib.sha256(previous).hexdigest()[:16]+'.raw')
+            if not saved.exists():
+                with saved.open('xb') as stream:stream.write(previous)
+        temporary=text_output.with_name(text_output.name+'.nhk-cleaning.tmp')
+        with temporary.open('w',encoding='utf-8-sig',newline='\r\n') as stream:stream.write(subtitle_text(srt))
+        temporary.replace(text_output)
+    if output!=source:
+        # Explicit plain conversion: the exact ASS bytes are already in backup.
+        if source.read_bytes()!=original:
+            raise OSError('Source subtitle changed during conversion')
+        source.unlink()
+    return dict(input=str(source),output=str(output),text_output=str(text_output) if text_output else '',backup=str(backup),**stats)

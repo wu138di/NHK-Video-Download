@@ -46,7 +46,7 @@ def install(ns):
                 if not (candidate==stem or candidate.startswith(stem+'.') or candidate.startswith(stem+'_')) or p.stat().st_mtime<started-2:
                     continue
                 try:
-                    r=auto_clean(p)
+                    r=auto_clean(p,plain=True,export_text=True)
                     self._append_log(f"字幕自动清理完成：{r['output']}（移除 {r['markers_removed']} 个控制标记）")
                 except (OSError,ValueError) as e:
                     self._append_log(f'字幕清理提示：{p.name}：{e}')

@@ -2,6 +2,7 @@
 import json
 import re
 from program_metadata import ProgrammeParser
+from media_request import is_ondemand, normalize_url
 
 
 def episode_id(url):
@@ -62,6 +63,13 @@ def install(ns):
         if self._page_key(captured_url) != self._page_key(current):
             return
         title, duration = page_metadata(page_html, captured_url)
+        if not title and is_ondemand(manifest_url):
+            # ODA pages may not expose NHK ONE's /ep metadata. Do not leave a
+            # valid DASH manifest waiting forever for another service's HTML.
+            from urllib.parse import urlsplit
+            identifier = urlsplit(normalize_url(manifest_url)).path.rsplit('/', 1)[-1].split('.', 1)[0]
+            title = str(getattr(self, '_page_meta_title', '') or '').strip() or ('NHKオンデマンド ' + identifier)
+            self._page_meta_title, self._page_meta_url = title, captured_url
         if not title:
             self._set_status('正在等待当前节目的资料', '#B05C68')
             return

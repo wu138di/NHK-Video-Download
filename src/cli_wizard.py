@@ -15,6 +15,7 @@ import uuid
 from live_guard import contains_live
 from runtime_profile import read_preferences, downloads_directory
 from subtitle_cleaner import auto_clean
+from media_request import normalize_url, request_headers
 
 TEXT = {
  'title': ('NHK 下载器 V2.0 · 命令行向导', 'NHK Video Download V2.0 · Console wizard', 'NHK ダウンローダー V2.0 · コンソールウィザード'),
@@ -53,6 +54,8 @@ def parse_headers(lines):
             raise ValueError('header')
         name, value = line.split(':', 1)
         name, value = name.strip(), value.strip()
+        if name.lower() in ('origin', 'referer', 'accept'):
+            value = normalize_url(value)
         if not re.fullmatch(r"[!#$%&'*+.^_`|~0-9A-Za-z-]+", name):
             raise ValueError('header')
         for old in list(result):
@@ -144,6 +147,8 @@ class Session:
 
     def command(self, url, folder, name):
         folder.mkdir(parents=True, exist_ok=True)
+        url = normalize_url(url)
+        self.headers = request_headers(url, self.headers)
         args = [str(self.engine), url, '--save-dir', str(folder), '--tmp-dir', str(folder / 'segments'),
             '--save-name', name, '--no-log', '--no-ansi-color', '--disable-update-check',
             '--del-after-done', 'false', '--ui-language', 'en-US',
@@ -287,8 +292,13 @@ class Session:
         subtitles = [p for p in folder.glob('*') if p.suffix.lower() in ('.srt', '.ass', '.ssa')]
         if chosen['sub'] and len(subtitles) < len(chosen['sub']):
             raise WorkflowError('verify')
+        cleaned = []
         for subtitle in subtitles:
-            auto_clean(subtitle)
+            result = auto_clean(subtitle, plain=True, export_text=True)
+            cleaned.append(Path(result['output']))
+            if result.get('text_output'):
+                cleaned.append(Path(result['text_output']))
+        subtitles = cleaned
         name = 'NHK_' + self.path.name
         exports = [(mp4, self.output / (name + '.mp4'))]
         exports += [(p, self.output / (name + '.' + p.name.removeprefix('media.'))) for p in subtitles]
@@ -360,7 +370,7 @@ def run(root, language='zh', read=input, secret=None, emit=print):
     try:
         emit(t('title'))
         while True:
-            url = read(t('url')).strip().strip('"\'')
+            url = normalize_url(read(t('url')))
             parsed = urlsplit(url)
             if parsed.scheme in ('http', 'https') and parsed.hostname:
                 break

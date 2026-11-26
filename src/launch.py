@@ -14,6 +14,7 @@ from gui_layout import install as install_layout
 from gui_localization import finish_install
 from browser_isolation import install as install_browser_isolation
 from general_diagnostics import install as install_general_diagnostics
+from ondemand_adapter import install as install_ondemand
 
 
 @lru_cache(maxsize=1)
@@ -26,7 +27,7 @@ def load_app():
     install_config(namespace)
     install_browser_isolation(namespace)
     import sys
-    for module_name in ('program_metadata', 'live_progress', 'preparation_errors', 'programme_binding', 'subtitle_integration', 'live_guard'):
+    for module_name in ('program_metadata', 'live_progress', 'preparation_errors', 'programme_binding', 'subtitle_integration', 'live_guard', 'ondemand_adapter', 'subtitle_finish', 'media_request'):
         localize_extension(sys.modules[module_name])
     install(namespace)
     install_live_progress(namespace)
@@ -35,6 +36,7 @@ def load_app():
     install_subtitles(namespace)
     install_live_guard(namespace)
     install_general_diagnostics(namespace, LANGUAGE)
+    install_ondemand(namespace)
     install_layout(namespace, translate)
     finish_install(namespace)
     return namespace
